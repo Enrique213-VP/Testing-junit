@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+    <Button
+            android:id="@+id/btn_Horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/cardview_default_elevation"
+            android:text="Horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <Button
+            android:id="@+id/btn_Vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/cardview_default_elevation"
+            android:text="Vertical"
+            app:layout_constraintStart_toStartOf="@id/btn_Horizontal"
+            app:layout_constraintBottom_toTopOf="@id/btn_Horizontal"/>
+    <Button
+            android:id="@+id/btn_grid"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/cardview_default_elevation"
+            android:text="Grid"
+            app:layout_constraintStart_toStartOf="@id/btn_Horizontal"
+            app:layout_constraintTop_toBottomOf="@id/btn_Horizontal"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

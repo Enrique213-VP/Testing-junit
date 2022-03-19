@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Codelab_Artist</string>
+    <string name="painter_years">Año: %1$s</string>
+    <string name="painter_artwork">Obra: %1$s</string>
+</resources>
